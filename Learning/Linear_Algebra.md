@@ -32,7 +32,7 @@ $$
 
 #### Row Picture 1
 
-![row picture1](image/row_picture-16324013669961.png)
+![row picture1](../image/row_picture-16324013669961.png)
 
 #### Column Picture 1
 
@@ -51,7 +51,7 @@ x
 $$
 this equation asking for finding the **linear combination** of columns
 
-![column piture](image/geogebra-16324022690272.png)
+![column piture](../image/geogebra-16324022690272.png)
 take all linear combination of col1 and col2 will get the whole plane.
 
 ### Example2
@@ -77,7 +77,7 @@ $$
 
 #### Row Picture 2
 
-![row picture](image/geogebra-16324030816973.png)
+![row picture](../image/geogebra-16324030816973.png)
 
 equation makes a plane, not important
 
@@ -102,7 +102,7 @@ x
 \end{bmatrix}
 $$
 
-![column picture](image/geogebra-16324034826314.png)
+![column picture](../image/geogebra-16324034826314.png)
 
 Can I solve $Ax=b$ for every b?$==$Do the linear combinations of the columns fill 3D space? $==$Do the matrix no single?$==$Do the matrix inverterable?
 
