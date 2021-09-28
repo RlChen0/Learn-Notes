@@ -301,22 +301,6 @@ $$
 
 $$
 
-### Inverses
-
-$$
-
-\begin{bmatrix}
-    1&0&0\\3&1&0\\0&0&1
-\end{bmatrix}
-\begin{bmatrix}
-    1&0&0\\-3&1&0\\0&0&1
-\end{bmatrix}
-=
-\begin{bmatrix}
-    1&0&0\\0&1&0\\0&0&1
-\end{bmatrix}
-$$
-
 $$
 
 \mathbb{E^{-1}E=I}
@@ -396,4 +380,19 @@ $$
 
 $$
 
-## Invers
+## Inverses
+
+### For invertible,nonsingular matrix, Inverse is exsit.
+
+$$
+
+\mathbb{A^{-1}A=I}\\
+and\ if\ A\ is\ Square\ \mathbb{AA^{-1}=I}
+
+$$
+
+### Singular, No inverses
+
+#### prov1
+
+#### prov2
