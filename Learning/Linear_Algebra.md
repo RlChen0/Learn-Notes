@@ -393,6 +393,46 @@ $$
 
 ### Singular, No inverses
 
+$$
+
+A=
+\begin{bmatrix}
+    1&3\\2&6
+\end{bmatrix}
+
+$$
+
 #### prov1
 
+product of A with another matrix, the result is the linear combination of A, and can't get Identity matrix from linear combination the column of A.
+
 #### prov2
+
+$$
+
+\begin{bmatrix}
+    1&3\\2&6
+\end{bmatrix}
+\begin{bmatrix}
+    3\\-1
+\end{bmatrix}
+=
+\begin{bmatrix}
+    0\\0
+\end{bmatrix}
+$$
+
+$$
+
+\mathbb{Ax=0}
+\rightarrow
+\mathbb{A^{-1}Ax=0}
+\rightarrow
+\mathbb{Ix=0}
+\rightarrow
+\mathbb{x=0}
+$$
+but x is not Zero.
+
+**Non-invertible, singular matrices some combination of the column can get 0.**
+$\mathbb{Ax=0},x\not ={0}$
