@@ -384,6 +384,8 @@ $$
 
 ### For invertible,nonsingular matrix, Inverse is exsit.
 
+column vector are point in different direction.Are linear indenpendent
+
 $$
 
 \mathbb{A^{-1}A=I}\\
@@ -436,3 +438,79 @@ but x is not Zero.
 
 **Non-invertible, singular matrices some combination of the column can get 0.**
 $\mathbb{Ax=0},x\not ={0}$
+
+### compute Inverses
+
+$$
+
+\begin{bmatrix}
+    1&3\\2&7
+\end{bmatrix}
+\begin{bmatrix}
+    a&c\\b&d
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1&0\\0&1
+\end{bmatrix}
+$$
+
+#### method1
+$$
+
+\begin{bmatrix}
+    1&3\\2&7
+\end{bmatrix}
+\begin{bmatrix}
+    a\\b
+\end{bmatrix}=
+\begin{bmatrix}
+    1\\0
+\end{bmatrix}
+\\
+\begin{bmatrix}
+    1&3\\2&7
+\end{bmatrix}
+\begin{bmatrix}
+    c\\d
+\end{bmatrix}=
+\begin{bmatrix}
+    0\\1
+\end{bmatrix}
+$$
+
+compute the equations
+
+#### method2 Gauss-Jordan(solve 2 eqns at once)
+
+$$
+
+\begin{bmatrix}
+    1&3&1&0\\2&7&0&1
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+    1&3&1&0\\0&1&-2&0
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+    1&0&7&-3\\0&1&-2&0
+\end{bmatrix}
+$$
+
+PROV
+
+$$
+E
+\begin{bmatrix}
+    A&I
+\end{bmatrix}
+=
+\begin{bmatrix}
+    I&E
+\end{bmatrix}
+\Rightarrow E==A^{-1}
+$$
+
+## Lecture 4
+
