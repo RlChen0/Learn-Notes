@@ -78,7 +78,7 @@ $$
 
 A=
 \begin{bmatrix}
-    2&-1&0\\-1&2&-1\\&-3&4
+    2&-1&0\\-1&2&-1\\0&-3&4
 \end{bmatrix},
 b=
 \begin{bmatrix}
@@ -514,3 +514,103 @@ $$
 
 ## Lecture 4
 
+$$
+
+ABB^{-1}A^{-1}=I
+
+$$
+
+$$
+
+A^{-1}A=I
+\rightarrow
+A^{T}(A^{-1})^T=I
+
+$$
+
+A transpose inverse is A inverse transpose.
+
+Order of Transpose and Inverse can be change.
+
+$$
+
+\mathbb{A=LU}
+
+$$
+If no row exchanges,multipliers go directly into $\mathbb{L}$.
+
+$A\rightarrow U$ NEED $\frac{1}{3}n^3$ opeartion and for $\mathbb{b}$ need $n^2$
+
+$n\times n\ matrix,\ n^2+(n-1)^2+\cdots1^2=\frac{1}{3}n^3(\frac{d}{dx}x^2)\\for\ b,\ 2\times[n+(n-1)\cdots1]=n^2$
+
+### Permutation
+
+matrix exchange rows.
+
+$$
+
+\mathbb{P^(-1)=P^T}\rightarrow P^TP=I
+$$
+
+$$
+
+n \times n\ matrices\ has A^n_n\ \  permutation\ matrix
+$$
+
+for matrices needs row exchange.
+$$
+
+\mathbb{A=LU}\Rightarrow \mathbb{PA=LU}
+$$
+
+### Transpose
+
+$$
+
+(\begin{bmatrix}
+    1&2\\3&4\\5&6
+\end{bmatrix})^T
+=
+\begin{bmatrix}
+    1&2&3\\4&5&6
+\end{bmatrix}
+
+(A)^T_{ij}=A_{ji}
+$$
+
+$$
+
+Symmetic Matrix\\
+\mathbb{A^T=A}
+$$
+
+$$
+
+RR^T\ is\ always\ symmetric\ matrix.\\
+(RR^T)^T=(R^T)^TR^T=RR^T
+$$
+
+## Lecture5
+
+### Vector Space
+
+Vector Space is a space closed for linear combination.(vectors in space after linear combinatin still in the spaces)
+
+### Subspace
+
+Subspace for $R^2$
+
+* $R^2$
+* line through $\begin{bmatrix}0\\0\end{bmatrix}$
+* $\begin{bmatrix}0\\0\end{bmatrix}$
+
+Subspace for $R^3$
+
+* $R^3$
+* plane through $\begin{bmatrix}0\\0\\0\end{bmatrix}$
+* line through $\begin{bmatrix}0\\0\\0\end{bmatrix}$
+* $\begin{bmatrix}0\\0\\0\end{bmatrix}$
+
+#### $C(A),\ Column Space$
+
+linear combination of columns and Zero vector.
