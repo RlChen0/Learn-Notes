@@ -614,3 +614,60 @@ Subspace for $R^3$
 #### $C(A),\ Column Space$
 
 linear combination of columns and Zero vector.
+
+## Lecture 6
+
+$$
+
+all\ combination\ cv+dw\ are\ all\ in\ the\ space.\\
+intersection\ of\ Subspace\ is\ a\ subspacs.
+$$
+
+### Column Space
+
+Column Space is linear combination of column in matrix.
+
+### Null Space
+
+$$
+
+\mathbb{Ax=0},all\ x\ produce\ the\ null space.
+$$
+
+## Lecture 7
+
+$$
+
+\mathbb{A=}
+\begin{bmatrix}
+    1&2&2&2\\2&4&6&8\\3&6&8&10
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+    1&2&2&2\\0&0&2&4\\0&0&2&4
+\end{bmatrix}
+\rightarrow
+\mathbb{U=}
+\begin{bmatrix}
+    1&2&2&2\\0&0&2&4\\0&0&0&0
+\end{bmatrix}
+\\
+The\ zero\ row\ tell\ row3\ is\ the\ linear\ combination\ of\ row1\ and\ 2.elimitaion\ will\ knock\ it\ out.
+$$
+
+elimination, get the number of pivots.
+
+the rank of A = the number of pivits = A
+
+the free variables = n-r = 4-2 = 2
+
+free variables can be choose freely, and back subsititution to solve the eqution.
+
+$$
+
+\begin{bmatrix}
+    1&2&2&2\\0&0&2&4\\0&0&0&0
+\end{bmatrix}
+\rightarrow
+
+$$
