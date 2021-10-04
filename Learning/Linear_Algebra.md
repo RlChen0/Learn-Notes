@@ -669,5 +669,122 @@ $$
     1&2&2&2\\0&0&2&4\\0&0&0&0
 \end{bmatrix}
 \rightarrow
+\begin{bmatrix}
+    1&2&0&-2\\0&0&2&4\\0&0&0&0
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+    1&2&0&-2\\0&0&1&2\\0&0&0&0
+\end{bmatrix}
+=
+\mathbb{R}
+=rref(\mathbb{A})
+$$
 
 $$
+
+\mathbb{A\rightarrow U\rightarrow R}\\
+\mathbb{R}=
+\begin{bmatrix}
+    I&F\\0&0
+\end{bmatrix}\\
+\mathbb{Rx=0}
+=
+\begin{bmatrix}
+    I&F\\0&0
+\end{bmatrix}
+\begin{bmatrix}
+    -F\\I
+\end{bmatrix}
+\\
+c\begin{bmatrix}
+    -F\\I
+\end{bmatrix}\ is\ the\ null\ space\ matrix
+\\
+\begin{bmatrix}
+    -2&2\\0&-2\\1&0\\0&1
+\end{bmatrix}
+\rightarrow
+c_1\begin{bmatrix}
+    -2\\0\\1\\0
+\end{bmatrix}+
+c_2\begin{bmatrix}
+    2\\-2\\0\\1
+\end{bmatrix}\ are\ the\ solution.
+$$
+
+## Lecture 8
+
+### solve Ax=b
+
+$$
+
+\begin{bmatrix}
+    A&b
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+    U&b
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+    R&b
+\end{bmatrix}
+$$
+get the $x_p$ through elimination. And add it with null space.
+
+$$
+
+Ax_p=b\\
+Ax_n=0\\
+A(x_p+x_n)=b
+$$
+
+$x_p+x_n$ is the complete solve of $Ax=b$ 
+
+#### $r=m=n$
+
+$$
+
+R=I
+$$
+
+null space is 0, only 1 solution for Ax=b.
+
+#### $r=m<n$
+
+$$
+
+R=
+\begin{bmatrix}
+    I&F
+\end{bmatrix}
+$$
+
+null space is not only zero, $\inf$ solution.
+
+#### $r=n<m$
+
+$$
+R=
+\begin{bmatrix}
+    I\\0
+\end{bmatrix}
+$$
+
+null space is zero, 0 or 1 solution.
+
+#### $r<n,r<m$
+
+$$
+
+R=
+\begin{bmatrix}
+    I&F\\0&0
+\end{bmatrix}
+$$
+
+null space is not only 0, 0 or $\inf$ solution.
+
+## Lecture 9
+
