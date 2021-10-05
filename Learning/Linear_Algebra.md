@@ -788,3 +788,23 @@ null space is not only 0, 0 or $\inf$ solution.
 
 ## Lecture 9
 
+### Linear indenpedent
+
+bunch of vector only times Zero vector get the Zero.
+
+The null space of the matrix only have Zero.
+
+### Span
+
+all linear combination of vectors span a space.
+
+### basis
+
+a bunch of vector span a space and are indenpendent,
+
+### dimention
+
+the number of basis vector.
+
+rank of matrix = dim of C(A)
+n-r = dim of N(A)
