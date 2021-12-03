@@ -9,3 +9,57 @@
 [linux tar 解压命令总结_Young的专栏-CSDN博客_linux tar解压](https://blog.csdn.net/imyang2007/article/details/7634470)
 
 [如何在 markdown 中表示矩阵？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/269245898)
+
+* 将染色体划分成20bp 间隔, 10bp步长
+
+* ```bash
+  bedtools makewindows -g  chrom.size -w 20 -s 10
+  ```
+
+gff2gtf
+
+* ```bash
+  gffread gencode.v19.annotation.gff3 -T -o gencode.v19.gtf
+  ```
+
+* ```bash
+  gffread gencode.vM13.annotation.gtf -o gencode.vM13.annotation.gff3
+  ```
+
+## Pandas
+
+```python
+df[(df[""]==)&(df[""])]
+```
+
+```python
+Series.unique()
+# Return unique values of Series object.
+# Returns
+# ndarray or ExtensionArray
+# The unique values returned as a NumPy array
+```
+
+
+
+无限迭代器
+
+```python
+import itertools
+itertools.conut() 
+itertools.cycle() #cycle()会把传入的一个序列无限重复下去
+itertools.repeat() #repeat()负责把一个元素无限重复下去，不过如果提供第二个参数就可以限定重复次数
+itertools.takewhile() #可以把一组迭代对象串联起来，形成一个更大的迭代器
+```
+
+
+
+sonnet_sad.py -f ../data/refgenome/NIP/IRGSP-1.0_genome.fasta -o sad_test --species nip save_model/nip_768_0.001_mmt_203/ ../data/vcf_samples/180.vcf
+
+## Linux
+
+```shell
+# 替换 gene 为 GENE
+sed 's/gene/GENE/g' file
+```
+

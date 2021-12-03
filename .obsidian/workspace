@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "fcb9ddf60ea818e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "da24d9ba113b43bd",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0cc964d272db0864",
+    "type": "split",
+    "children": [
+      {
+        "id": "adeed9594f96d4d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da05ea745a1682f9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f3e5da8724ebd57d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dc981a93f56d1f0e",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf24762bbd062cea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66adc6fe078e0630",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "da24d9ba113b43bd",
+  "lastOpenFiles": [
+    "_sidebar.md",
+    "Learning/Linear_Algebra.md",
+    "Learning/机器学习-李宏毅.md",
+    "Learning/d2l.md",
+    "_coverpage.md",
+    "文献.md",
+    "文献笔记.md",
+    "Experiment_Recording/Rice_Epigenome_Prediction/实验记录.md",
+    "Search tips.md",
+    "Untitled.md"
+  ]
+}

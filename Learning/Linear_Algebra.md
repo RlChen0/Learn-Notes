@@ -1,4 +1,4 @@
-# Linear Algebra
+#  Linear Algebra
 
 ## Lecture 1
 
@@ -10,13 +10,10 @@
 ### Example1
 
 $$
-
 2x-y=0\\-x+2y=3
-
 $$
 
 $$
-
 \begin{bmatrix}
     2&-1\\-1&2
 \end{bmatrix}
@@ -27,13 +24,10 @@ $$
 \begin{bmatrix}
     0\\3
 \end{bmatrix}
-
 $$
 
 $$
-
 A\mathbf{x}=b
-
 $$
 
 #### Row Picture 1
@@ -43,7 +37,6 @@ $$
 #### Column Picture 1
 
 $$
-
 x
 \begin{bmatrix}
     2\\-1
@@ -55,7 +48,6 @@ x
 \begin{bmatrix}
     0\\3
 \end{bmatrix}
-
 $$
 this equation asking for finding the **linear combination** of columns
 
@@ -65,17 +57,14 @@ take all linear combination of col1 and col2 will get the whole plane.
 ### Example2
 
 $$
-
 \begin{cases}
     2x-y=0\\
     -x+2y-z=-1\\
     -3y+4z=4
 \end{cases}
-
 $$
 
 $$
-
 A=
 \begin{bmatrix}
     2&-1&0\\-1&2&-1\\0&-3&4
@@ -84,7 +73,6 @@ b=
 \begin{bmatrix}
     0\\-1\\4
 \end{bmatrix}
-
 $$
 
 #### Row Picture 2
@@ -96,7 +84,6 @@ equation makes a plane, not important
 #### Column Picture 2
 
 $$
-
 x
 \begin{bmatrix}
     2\\-1\\0
@@ -113,7 +100,6 @@ x
 \begin{bmatrix}
     0\\-1\\4
 \end{bmatrix}
-
 $$
 
 ![column picture](../image/geogebra-16324034826314.png)
@@ -125,7 +111,6 @@ Can I solve $Ax=b$ for every b?$==$Do the linear combinations of the columns fil
 $$A\mathbf{x}=b$$
 
 $$
-
 \begin{bmatrix}
 -&-&-\\-&-&-\\-&-&-
 \end{bmatrix}
@@ -135,13 +120,11 @@ $$
 =3\times\mathbf{col1}
 +4\times\mathbf{col2}
 +6\times\mathbf{col3}
-
 $$
 
 $A\times \mathbf{x}$  is a combenation of columns of $A$.
 
 $$
-
 \begin{bmatrix}
     1&2&7
 \end{bmatrix}
@@ -151,13 +134,10 @@ $$
 =3\times\mathbf{col1}
 +4\times \mathbf{col2}
 +6\times\mathbf{col3}
-
 $$
 
 $$
-
 m\times n\cdot n\times p = m\times p
-
 $$
 
 $\mathbf{x}\times A$ is combination of rows of $\mathbf{A}$
@@ -169,9 +149,7 @@ $\begin{cases}x+2y+z=2\\3x+8y+z=12\\4y+z=2\end{cases}$
 ### Elimination
 
 $$
-
 \begin{bmatrix}1&2&1\\3&8&1\\0&4&1\end{bmatrix}\mathbb{A}\underset{(2,1)}\rightarrow\begin{bmatrix}1&2&1\\0&2&-2\\0&4&1\end{bmatrix}\underset{(3,2)}\rightarrow\begin{bmatrix}\mathbb{1}&2&1\\0&\mathbb{2}&-2\\0&0&\mathbb{5}\end{bmatrix}\mathbb{U}
-
 $$
 
 $\mathbb{1,2,5}$ are the three pivix and 0 can't be a pivix.
@@ -184,7 +162,6 @@ Elimination failure when pivix is Zero and can't solve it by row exchange.
 #### normal version
 
 $$
-
 \begin{bmatrix}
     1&2&1\\3&8&1\\0&4&1
 \end{bmatrix}
@@ -209,7 +186,6 @@ $$
     2\\6\\-10
 \end{bmatrix}
 \mathbb{c}
-
 $$
 
 $\mathbb{Ab}$ is argument matrix.
@@ -221,7 +197,6 @@ $\mathbb{Ux=c}$ can easily solve.
 subtract $3\times\mathbb{row1}$ from $\mathbb{row2}$
 
 $$
-
 \mathbb{E_{21}}
 \begin{bmatrix}
     1&0&0\\-3&1&0\\0&0&1
@@ -233,13 +208,11 @@ $$
 \begin{bmatrix}
     1&2&1\\0&2&-2\\0&4&1
 \end{bmatrix}
-
 $$
 
 subtract $2\times\mathbb{row2}$ from $\mathbb{row3}$
 
 $$
-
 \mathbb{E_{32}}
 \begin{bmatrix}
     1&0&0\\0&1&0\\0&-2&1
@@ -250,19 +223,14 @@ $$
 \begin{bmatrix}
     1&2&1\\0&2&-2\\0&0&5
 \end{bmatrix}
-
 $$
 
 $$
-
 \mathbb{E_{32}(E_{21}A)=U}
-
 $$
 
 $$
-
 \mathbb{(E_{32}E_{21})A=U}
-
 $$
 
 ### Permutation matrix
@@ -270,7 +238,6 @@ $$
 #### Exchange row
 
 $$
-
 \begin{bmatrix}
     0&1\\1&0
 \end{bmatrix}
@@ -281,13 +248,11 @@ $$
 \begin{bmatrix}
     c&d\\a&b
 \end{bmatrix}
-
 $$
 
 #### Exchange column
 
 $$
-
 \begin{bmatrix}
     a&b\\c&d
 \end{bmatrix}
@@ -298,13 +263,10 @@ $$
 \begin{bmatrix}
     b&a\\d&c
 \end{bmatrix}
-
 $$
 
 $$
-
 \mathbb{E^{-1}E=I}
-
 $$
 
 ## Lecture 3
@@ -316,24 +278,18 @@ condition for matrices product.
 colnumber of first matrix == rownumber of second matrix.
 
 $$
-
 \mathbb{m\times n \cdot n\times p = m\times p}
-
 $$
 
 $$
-
 \mathbb{A\cdot B=C}\\
-
 $$
 
 ### method1
 
 $$
-
 \mathbb{C_{34}=(row3\ of\ A) \cdot (col4\ of\ B)}\\
 =a_{31}b_{14}+a_{32}b_{23}+\cdots=\sum a_{3k}b_{k4}
-
 $$
 
 ### method2
@@ -341,9 +297,7 @@ $$
 Column of C are combination of column of A, and column in B tells what's the combination.
 
 $$
-
 \mathbb{C\ cols=A \times B\ cols}
-
 $$
 
 ### method3
@@ -351,9 +305,7 @@ $$
 Row of C are combination of row of B, and row in A tells what's the combination.
 
 $$
-
 \mathbb{C\ rows=A\ rows \times B}
-
 $$
 
 ### method4
@@ -365,7 +317,6 @@ C is sum of cols of A $\times$ rows of B.
 divide matrix into blocks,and block in two matrices must match, can multiply matrices by block.
 
 $$
-
 \begin{bmatrix}
     A_1&A_2\\A_3&A_4
 \end{bmatrix}
@@ -377,7 +328,6 @@ $$
 \begin{bmatrix}
     A_1B_1+A_2B_3&A_1B_2+A_2B_4\\A_3B_1+A_4B_3&A_3B_2+A_4B_4
 \end{bmatrix}
-
 $$
 
 ## Inverses
@@ -387,21 +337,17 @@ $$
 column vector are point in different direction.Are linear indenpendent
 
 $$
-
 \mathbb{A^{-1}A=I}\\
 and\ if\ A\ is\ Square\ \mathbb{AA^{-1}=I}
-
 $$
 
 ### Singular, No inverses
 
 $$
-
 A=
 \begin{bmatrix}
     1&3\\2&6
 \end{bmatrix}
-
 $$
 
 #### prov1
@@ -411,7 +357,6 @@ product of A with another matrix, the result is the linear combination of A, and
 #### prov2
 
 $$
-
 \begin{bmatrix}
     1&3\\2&6
 \end{bmatrix}
@@ -425,7 +370,6 @@ $$
 $$
 
 $$
-
 \mathbb{Ax=0}
 \rightarrow
 \mathbb{A^{-1}Ax=0}
@@ -442,7 +386,6 @@ $\mathbb{Ax=0},x\not ={0}$
 ### compute Inverses
 
 $$
-
 \begin{bmatrix}
     1&3\\2&7
 \end{bmatrix}
@@ -457,7 +400,6 @@ $$
 
 #### method1
 $$
-
 \begin{bmatrix}
     1&3\\2&7
 \end{bmatrix}
@@ -484,7 +426,6 @@ compute the equations
 #### method2 Gauss-Jordan(solve 2 eqns at once)
 
 $$
-
 \begin{bmatrix}
     1&3&1&0\\2&7&0&1
 \end{bmatrix}
@@ -515,17 +456,13 @@ $$
 ## Lecture 4
 
 $$
-
 ABB^{-1}A^{-1}=I
-
 $$
 
 $$
-
 A^{-1}A=I
 \rightarrow
 A^{T}(A^{-1})^T=I
-
 $$
 
 A transpose inverse is A inverse transpose.
@@ -533,9 +470,7 @@ A transpose inverse is A inverse transpose.
 Order of Transpose and Inverse can be change.
 
 $$
-
 \mathbb{A=LU}
-
 $$
 If no row exchanges,multipliers go directly into $\mathbb{L}$.
 
@@ -548,25 +483,21 @@ $n\times n\ matrix,\ n^2+(n-1)^2+\cdots1^2=\frac{1}{3}n^3(\frac{d}{dx}x^2)\\for\
 matrix exchange rows.
 
 $$
-
 \mathbb{P^(-1)=P^T}\rightarrow P^TP=I
 $$
 
 $$
-
 n \times n\ matrices\ has A^n_n\ \  permutation\ matrix
 $$
 
 for matrices needs row exchange.
 $$
-
 \mathbb{A=LU}\Rightarrow \mathbb{PA=LU}
 $$
 
 ### Transpose
 
 $$
-
 (\begin{bmatrix}
     1&2\\3&4\\5&6
 \end{bmatrix})^T
@@ -579,13 +510,11 @@ $$
 $$
 
 $$
-
 Symmetic Matrix\\
 \mathbb{A^T=A}
 $$
 
 $$
-
 RR^T\ is\ always\ symmetric\ matrix.\\
 (RR^T)^T=(R^T)^TR^T=RR^T
 $$
@@ -618,7 +547,6 @@ linear combination of columns and Zero vector.
 ## Lecture 6
 
 $$
-
 all\ combination\ cv+dw\ are\ all\ in\ the\ space.\\
 intersection\ of\ Subspace\ is\ a\ subspacs.
 $$
@@ -630,14 +558,12 @@ Column Space is linear combination of column in matrix.
 ### Null Space
 
 $$
-
 \mathbb{Ax=0},all\ x\ produce\ the\ null space.
 $$
 
 ## Lecture 7
 
 $$
-
 \mathbb{A=}
 \begin{bmatrix}
     1&2&2&2\\2&4&6&8\\3&6&8&10
@@ -664,7 +590,6 @@ the free variables = n-r = 4-2 = 2
 free variables can be choose freely, and back subsititution to solve the eqution.
 
 $$
-
 \begin{bmatrix}
     1&2&2&2\\0&0&2&4\\0&0&0&0
 \end{bmatrix}
@@ -682,7 +607,6 @@ $$
 $$
 
 $$
-
 \mathbb{A\rightarrow U\rightarrow R}\\
 \mathbb{R}=
 \begin{bmatrix}
@@ -718,7 +642,6 @@ $$
 ### solve Ax=b
 
 $$
-
 \begin{bmatrix}
     A&b
 \end{bmatrix}
@@ -734,7 +657,6 @@ $$
 get the $x_p$ through elimination. And add it with null space.
 
 $$
-
 Ax_p=b\\
 Ax_n=0\\
 A(x_p+x_n)=b
@@ -745,7 +667,6 @@ $x_p+x_n$ is the complete solve of $Ax=b$
 #### $r=m=n$
 
 $$
-
 R=I
 $$
 
@@ -754,7 +675,6 @@ null space is 0, only 1 solution for Ax=b.
 #### $r=m<n$
 
 $$
-
 R=
 \begin{bmatrix}
     I&F
@@ -777,7 +697,6 @@ null space is zero, 0 or 1 solution.
 #### $r<n,r<m$
 
 $$
-
 R=
 \begin{bmatrix}
     I&F\\0&0
@@ -802,7 +721,7 @@ all linear combination of vectors span a space.
 
 a bunch of vector span a space and are indenpendent,
 
-### dimention
+### Dimention
 
 the number of basis vector.
 
