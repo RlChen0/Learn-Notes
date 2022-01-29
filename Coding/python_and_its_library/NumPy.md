@@ -14,37 +14,35 @@ ndarray.itemsize
 
 ### ndarray创建方法
 
-* ```python
-  np.array(list/tuple, dtype=np.float32)
-  ```
+```python
+np.array(list/tuple, dtype=np.float32)
+```
 
-* ```python
-  np.arange(start, end, step)
-  np.ones(shape)
-  np.zeros(shape)
-  np.full(shape, value) # 生成元素全为val的矩阵
-  np.eye(n) # n by n identity matrix
-  # shape为tuple 
-  # 所有矩阵默认dtype为float32, 可通过dtype参数指定
-  np.ones_like(ndarray)
-  np.zeros_like(ndarray)
-  np.full_like(ndarray, val)
-  # 根据ndarray的性状产生矩阵
-  ```
+```python
+np.arange(start, end, step)
+np.ones(shape)
+np.zeros(shape)
+np.full(shape, value) # 生成元素全为val的矩阵
+np.eye(n) # n by n identity matrix# shape为tuple 
+# 所有矩阵默认dtype为float32, 可通过dtype参数指定
+np.ones_like(ndarray)
+np.zeros_like(ndarray)
+np.full_like(ndarray, val)
+# 根据ndarray的性状产生矩阵
+```
 
-* ```python
-  np.linspace(start, end, num, endpoint)
-  np.concatenate((a, b))
-  ```
-
+```python
+np.linspace(start, end, num, endpoint)
+np.concatenate((a, b))
+```
 ### ndarray 维度变换
 
-* ```python
-  ndarray.reshape(shape) # 不改变原数组
-  ndarray.resize(shape) # 改变原数组
-  ndarray.swapaxes(ax1, ax2)
-  ndarray.flatten()
-  ```
+```python
+ndarray.reshape(shape) # 不改变原数组
+ndarray.resize(shape) # 改变原数组
+ndarray.swapaxes(ax1, ax2)
+ndarray.flatten()
+```
 
 ### ndarray数据类型变换
 
@@ -148,6 +146,43 @@ seed(s)
 ## 统计函数
 
 ```python
- 
+np.*
+```
+
+```python
+.sum(array, axis=None)
+.mean(array, axis=None)
+.average(array, axis=None, weights=None)
+.std(array, axis=None)
+.var(array, axis=None)
+```
+
+```python
+.min() .max()
+.argmin() .argmax() # 返回最大最小值降一维下标
+.unravel_index(index, shape) #根据shape 将1维下标转换为多维下标， 常于argmax连用得到多维下标
+.ptp() # 最大值最小值差
+.median() 
+```
+
+## 梯度函数
+
+```python
+np.gradient()
+# 一维 返回（左 - 右）/ 2， 若无右值则本身 - 左值
+# 多维，返回各维度梯度
+```
+
+# pillow
+
+```python
+pip install pillow # 处理图像库
+from PIL import Image
+```
+
+```python
+np.array(Iamge.opne(fig))
+im = Iamge.fromarray()
+im.save()
 ```
 

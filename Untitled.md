@@ -50,3 +50,7 @@ python sonnet_predict_bed.py -f ../data/refgenome/MH63RS3/MH63RS3.fasta --specie
 
 
 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
+
+
+
+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

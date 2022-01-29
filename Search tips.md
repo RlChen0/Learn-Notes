@@ -50,10 +50,6 @@ itertools.repeat() #repeat()负责把一个元素无限重复下去，不过如�
 itertools.takewhile() #可以把一组迭代对象串联起来，形成一个更大的迭代器
 ```
 
-
-
-sonnet_sad.py -f ../data/refgenome/NIP/IRGSP-1.0_genome.fasta -o sad_test --species nip save_model/nip_768_0.001_mmt_203/ ../data/vcf_samples/180.vcf
-
 # Linux
 
 ```shell
