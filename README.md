@@ -1,3 +1,3 @@
-# 浮生杂记
+# LearnNotes
 
-> 个人记录网站
+> Pearsonl record
